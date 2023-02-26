@@ -39,7 +39,7 @@ const HeroImage = styled.img`
 
 const Picture = styled.picture`
   display: block;
-  width: 500px;
+  width: min(500px, 100%);
 `;
 
 const Swoop = styled.img`
@@ -52,6 +52,8 @@ const Swoop = styled.img`
   */
   bottom: -2px;
   width: 100%;
+  object-fit: cover;
+  object-position: left center;
 `;
 
 export default Hero;
