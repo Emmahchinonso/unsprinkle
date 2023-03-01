@@ -10,11 +10,17 @@ const Hero = () => {
           srcSet="/images/hero-img.avif 1x, /images/hero-img@2x.avif 2x, /images/hero-img@3x.avif 3x"
         />
 
-        <source srcSet="/images/hero-img.jpg 1x, /images/hero-img@2x.jpg 2x, /images/hero-img@3x.jpg 3x" />
+        <source
+          type="image/jpeg"
+          srcSet="/images/hero-img.jpg 1x, /images/hero-img@2x.jpg 2x, /images/hero-img@3x.jpg 3x"
+        />
 
-        <HeroImage src="/images/hero-img.jpg" />
+        <HeroImage
+          src="/images/hero-img.jpg"
+          alt="An example of the photos listed on this page, (cat on black background)"
+        />
       </Picture>
-      <Swoop src="/swoop.svg" />
+      <Swoop src="/swoop.svg" alt="" />
     </Wrapper>
   );
 };
